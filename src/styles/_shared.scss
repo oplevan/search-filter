@@ -1,0 +1,28 @@
+$primary: #002a61;
+$secondary: #00207f;
+$tertiary: #1d2f5f;
+
+$green: #5db944;
+$cyan: #75cee3;
+
+$main-background: #ffffff;
+$primary-text: $primary;
+$secondary-text: #999;
+
+/* BREAKPOINTS */
+$xs-width: 0px;
+$sm-width: 600px;
+$md-width: 900px;
+$lg-width: 1200px;
+$xl-width: 1536px;
+
+@mixin bp-sm-up {
+  @media (min-width: #{$sm-width}) {
+    @content;
+  }
+}
+@mixin bp-md-up {
+  @media (min-width: #{$md-width}) {
+    @content;
+  }
+}

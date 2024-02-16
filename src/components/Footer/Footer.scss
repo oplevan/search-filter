@@ -1,0 +1,50 @@
+@import "../../styles/shared";
+
+footer {
+  margin-top: 70px;
+  background-color: $secondary;
+  padding: 25px 0;
+  color: white;
+  font: 400 15px "Open Sans", sans-serif;
+
+  .grid-container {
+    align-items: center;
+
+    .copyright,
+    .fnav {
+      margin-top: 15px;
+      text-align: left;
+
+      @include bp-sm-up {
+        text-align: center;
+      }
+    }
+
+    .fnav {
+      a {
+        text-decoration: none;
+        color: #338aff;
+        display: block;
+        margin-top: 5px;
+      }
+      @include bp-md-up {
+        text-align: right;
+
+        a {
+          display: inline;
+
+          &:not(:first-child) {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  .logo {
+    display: inline-block;
+    img {
+      line-height: 0;
+      margin: 0;
+    }
+  }
+}

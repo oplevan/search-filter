@@ -1,0 +1,60 @@
+@import '../../styles/shared';
+
+header {
+  overflow: hidden;
+  background: url('../../assets/shape-m.png') no-repeat 80% 100%, url('../../assets/gradient-m.png') no-repeat center;
+  background-size: 230px, cover;
+
+  @include bp-sm-up {
+    background: url('../../assets/shape.png') no-repeat calc(50% + 280px) top, url('../../assets/gradient.png') no-repeat center;
+    background-size: contain, auto;
+  }
+
+  .header-container {
+    padding-top: 35px;
+    padding-bottom: 200px;
+
+    @include bp-sm-up {
+      padding: 35px 0 20px;
+    }
+  }
+
+  .logo {
+    display: inline-block;
+    line-height: 0;
+    margin-bottom: 15px;
+  }
+
+  .heading {
+    font-size: 32px;
+    font-weight: 900;
+    color: $primary;
+    max-width: 300px;
+    line-height: 1.1;
+  }
+}
+.message {
+  text-align: center;
+  background-color: #002a61;
+  padding: 10px 20px;
+  color: #fff;
+
+  .p1,
+  .p2 {
+    font-size: 14px;
+  }
+
+  @include bp-sm-up {
+    .p1,
+    .p2 {
+      font-size: 18px;
+    }
+  }
+
+  .p1 {
+    margin-bottom: 16px;
+    @include bp-sm-up {
+      margin-bottom: 0;
+    }
+  }
+}

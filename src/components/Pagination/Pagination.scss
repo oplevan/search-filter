@@ -1,0 +1,78 @@
+@import "../../styles/shared";
+
+.pagination-container {
+  display: flex;
+  list-style-type: none;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+
+  .pagination-item {
+    width: 28px;
+    height: 32px;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 4px;
+    font-weight: 600;
+    font-feature-settings: "lnum" 1;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    &:not(.dots):hover {
+      color: white;
+      background-color: $green;
+      cursor: pointer;
+
+      .arrow:before {
+        border-color: white;
+      }
+    }
+
+    &.selected {
+      font-weight: 500;
+      background-color: $cyan !important;
+      &:hover {
+        cursor: default;
+        color: $primary-text;
+      }
+    }
+
+    .arrow {
+      &::before {
+        position: relative;
+        content: "";
+        display: inline-block;
+        width: 0.6em;
+        height: 0.6em;
+        border-right: 3px solid $primary;
+        border-top: 3px solid $primary;
+      }
+
+      &.left {
+        transform: rotate(-135deg);
+      }
+
+      &.right {
+        transform: rotate(45deg);
+      }
+    }
+
+    &.disabled {
+      pointer-events: none;
+
+      .arrow::before {
+        border-right: 3px solid rgba(0, 0, 0, 0.43);
+        border-top: 3px solid rgba(0, 0, 0, 0.43);
+      }
+
+      &:hover {
+        background-color: transparent;
+        cursor: default;
+      }
+    }
+  }
+}

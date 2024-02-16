@@ -1,0 +1,95 @@
+{
+  "filters": {
+    "congress": [{"id": "hcop", "value": "HCOP"}, {"id": "asn", "value": "ASN"}],
+    "product": [{"id": "rimegepant", "value": "rimegepant"}, {"id": "zavegepant", "value": "zavegepant"}, {"id": "troriluzole", "value": "troriluzole"}],
+    "year": [{"id": "2022", "value": 2022}],
+    "type": [{"id": "de-novo", "value": "De Novo"}, {"id": "encore", "value": "Encore"}, {"id": "heor", "value": "HEOR"}, {"id": "clinical", "value": "Clinical"}],
+    "area": [{"id": "migraine", "value": "Migraine"}, {"id": "ocd", "value": "Obsessive-compulsive disorder"}, {"id": "sa", "value": "Spinocerebellar ataxia"}, {"id": "als", "value": "Amyotrophic lateral sclerosis"}]
+  },
+  "pdfList": [
+    {
+      "title": "Acute Treatment With Oral Rimegepant 75mg Reduces Migraine-Related Disability in Adults With and Without a History of Triptan Treatment Failure: Results From a One-Year, Open-Label Safety Study",
+      "src": "/Biohavenpharma/HCOP/LTrimegepant_MIDAS_triptanfail.pdf",
+      "description": "",
+      "filters": {
+        "congress": "hcop",
+        "product": "rimegepant",
+        "type": ["encore", "clinical"],
+        "area": "migraine",
+        "year": 2022
+      }
+    },
+    {
+      "title": "Long-term Use of Rimegepant 75 mg for the Acute Treatment of Migraine Reduces Use of Analgesics  and Antiemetics",
+      "src": "/Biohavenpharma/HCOP/LTrimegepant_reduce_analgesic.pdf",
+      "description": "",
+      "filters": {
+        "congress": "hcop",
+        "product": "rimegepant",
+        "type": ["encore", "clinical"],
+        "area": "migraine",
+        "year": 2022
+      }
+    },
+    {
+      "title": "Preference for Rimegepant and Improved Clinical Global Impression of Change Among Adults With a History of Triptan Treatment Failure: Results From a Long-Term Open-Label Safety Study",
+      "src": "/Biohavenpharma/HCOP/LTrimegepant_POM_CGIC_triptanfail.pdf",
+      "description": "",
+      "filters": {
+        "congress": "hcop",
+        "product": "rimegepant",
+        "type": ["encore", "clinical"],
+        "area": "migraine",
+        "year": 2022
+      }
+    },
+    {
+      "title": "Long-term Rimegepant for the Acute Treatment of Migraine Reduces Use of Analgesics and Antiemetics",
+      "src": "/Biohavenpharma/ASN/LTrimegepant_reduce_analgesic.pdf",
+      "description": "",
+      "filters": {
+        "congress": "asn",
+        "product": "rimegepant",
+        "type": ["encore", "clinical"],
+        "area": "migraine",
+        "year": 2022
+      }
+    },
+    {
+      "title": "Rimegepant for the Acute Treatment of Migraine With and Without a History of Triptan Failure",
+      "src": "/Biohavenpharma/ASN/ph3_poolrimegepant_tripfail.pdf",
+      "description": "",
+      "filters": {
+        "congress": "asn",
+        "product": "rimegepant",
+        "type": ["encore", "clinical"],
+        "area": "migraine",
+        "year": 2022
+      }
+    },
+    {
+      "title": "Rimegepant Preference and Improved Clinical Global Impression of Change Among Adults With Triptan Treatment Failure",
+      "src": "/Biohavenpharma/ASN/LTrimegepant_POM_CGIC_triptanfail.pdf",
+      "description": "",
+      "filters": {
+        "congress": "asn",
+        "product": "rimegepant",
+        "type": ["encore", "clinical"],
+        "area": "migraine",
+        "year": 2022
+      }
+    },
+    {
+      "title": "Phase 2/3, Randomized, Double-Blind, Placebo-Controlled Study Evaluating Rimegepant for the Preventive Treatment of Migraine",
+      "src": "/Biohavenpharma/ASN/ph2_3_rimegepant_prevent.pdf",
+      "description": "",
+      "filters": {
+        "congress": "asn",
+        "product": "rimegepant",
+        "type": ["encore", "clinical"],
+        "area": "migraine",
+        "year": 2022
+      }
+    }
+  ]
+}
